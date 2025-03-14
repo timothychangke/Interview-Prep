@@ -68,3 +68,9 @@ Scalable from one instance to thousands
 Allows for automation
 Security managed by IAM access policies
 Large ecosystem of partnering services
+
+
+Three important Devops KPIs?
+Mean time to failure recovery
+Deployment frequency 
+Deployment failure rate
