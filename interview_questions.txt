@@ -47,3 +47,8 @@ How would you approach a project?
 Assess existing process and identify areas of improvement
 Come up with a PoC for approval
 Begin with version control, testing, integration, deployment, delivery, monitoring
+
+
+What is the difference between continuous delivery and continous deployment
+continuous delivery: code is always in deployable state, every change commited goes through pipeline of building, testing, and staging, manual approval is required before change is made
+continuous deployment: code is always in deployable state, every change must pass tests in order to go into production, process is entirely automated, continuous monitoring and rollback is preferred as opposed to manual checks
