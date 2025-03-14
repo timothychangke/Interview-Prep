@@ -40,3 +40,10 @@ Plan, build, test, integrate, deploy, operate monitor
 Benefits of Devops?
 
 Continous deployment, stable environment, faster detection of defects, less complex problem, faster delivery, improve collaboration
+
+
+How would you approach a project?
+
+Assess existing process and identify areas of improvement
+Come up with a PoC for approval
+Begin with version control, testing, integration, deployment, delivery, monitoring
