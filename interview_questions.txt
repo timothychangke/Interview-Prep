@@ -35,3 +35,8 @@ Selenium, Puppet, Chef, Git, Jenkins, Ansible, and docker
 What are the different phases of devops?
 
 Plan, build, test, integrate, deploy, operate monitor
+
+
+Benefits of Devops?
+
+Continous deployment, stable environment, faster detection of defects, less complex problem, faster delivery, improve collaboration
