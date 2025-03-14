@@ -59,3 +59,12 @@ How does continuous monitoring help in architecture maintenance?
 
 Continuous monitoring helps with the process of detecting identify and reporting faults and threats. They ensure the all services, application and resources are running properly. Determines if the application are working correctly. 
 Continuous audit, transaction inspection, control monitoring
+
+
+What role does AWS play in devops?
+
+Flexible ready to use services without installation
+Scalable from one instance to thousands
+Allows for automation
+Security managed by IAM access policies
+Large ecosystem of partnering services
