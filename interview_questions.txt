@@ -53,3 +53,9 @@ What is the difference between continuous delivery and continous deployment?
 
 continuous delivery: code is always in deployable state, every change commited goes through pipeline of building, testing, and staging, manual approval is required before change is made
 continuous deployment: code is always in deployable state, every change must pass tests in order to go into production, process is entirely automated, continuous monitoring and rollback is preferred as opposed to manual checks
+
+
+How does continuous monitoring help in architecture maintenance?
+
+Continuous monitoring helps with the process of detecting identify and reporting faults and threats. They ensure the all services, application and resources are running properly. Determines if the application are working correctly. 
+Continuous audit, transaction inspection, control monitoring
