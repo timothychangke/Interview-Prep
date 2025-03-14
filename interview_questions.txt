@@ -30,3 +30,8 @@ conflicts between customer feedback and developers
 What are the popular devops tools?
 
 Selenium, Puppet, Chef, Git, Jenkins, Ansible, and docker
+
+
+What are the different phases of devops?
+
+Plan, build, test, integrate, deploy, operate monitor
