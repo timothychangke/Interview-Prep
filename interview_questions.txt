@@ -25,3 +25,8 @@ Agile vs devops?
 
 Devops is a culture that allows swes and ops teams to work together, resulting in continuous software developement, deployment, testing, monitoring and integrations. Agile is about small incremental and rapid software releases to address
 conflicts between customer feedback and developers
+
+
+What are the popular devops tools?
+
+Selenium, Puppet, Chef, Git, Jenkins, Ansible, and docker
