@@ -14,3 +14,8 @@ it development, automation, scripting and cloud computing. They are also adept i
 What are the requirements of a devops engineer?
 
 Excellent technological background, experience in devops tools and methodologies, scripting and automation, and cloud computing experience
+
+
+What do you know about Devops?
+
+Explain the importance of devops in the industry, how they synergise operations and development teams to accelerate delivery while reducing failures, Devops walks a product through an entire software developement lifecycle.
