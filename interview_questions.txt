@@ -5,6 +5,14 @@ like automation, continuous integration, delivery, deployment, monitoring and fe
 cycles and enhance team cooperation
 
 
-What is a devops engineer
+What is a devops engineer?
 
-test
+A devops engineer is one that collaborates closely with software engineers and the operations team to implement continuous integration and continuous development so as to improve software quality and delivery efficiency. They are proficient
+it development, automation, scripting and cloud computing. They are also adept in source control management, visualisation, deployment, virtualisation, containerisation, logging and monitoring tools.
+
+
+What are the requirements of a devops engineer?
+
+Excellent technological background, experience in devops tools and methodologies, scripting and automation, and cloud computing experience
+
+
