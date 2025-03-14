@@ -1,0 +1,2 @@
+like automation, continuous integration, delivery, deployment, monitoring and feedback are also used to speed up delivery whilst reducing mistakes. All these will increase software quality, teams agility , productivity via quicker release
+cycles and enhance team cooperation
