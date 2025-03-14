@@ -74,3 +74,10 @@ Three important Devops KPIs?
 Mean time to failure recovery
 Deployment frequency 
 Deployment failure rate
+
+
+What is Infrastructure as code?
+Manage configuration, deployment and automated provisionings with code
+Manage data centers with machine readable configs instead of physical hardware
+Ensuring all infrastructure comopnents are provisioned effectively
+IaaS to administer cloud resources
