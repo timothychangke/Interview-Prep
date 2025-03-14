@@ -1,0 +1,10 @@
+What is devops?
+
+Devops is the approach that combines software development and operations to achieve efficient dev, delivery and deployment of software. The primary objective is to foster teamwork between the dev team and the ops team. In addition, processes
+like automation, continuous integration, delivery, deployment, monitoring and feedback are also used to speed up delivery whilst reducing mistakes. All these will increase software quality, teams agility , productivity via quicker release
+cycles and enhance team cooperation
+
+
+What is a devops engineer
+
+test
