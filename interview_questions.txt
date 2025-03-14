@@ -13,6 +13,4 @@ it development, automation, scripting and cloud computing. They are also adept i
 
 What are the requirements of a devops engineer?
 
-Excellent technological background, experience in devops tools and methodologies, scripting and automation, and cloud computing experience.
-
-
+Excellent technological background, experience in devops tools and methodologies, scripting and automation, and cloud computing experience
