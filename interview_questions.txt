@@ -95,3 +95,10 @@ Why is devops so popular now?
 
 First talk about the current state of the industry, with big players like netflix and facebook investing millions into devops. With their continuous deployment, they can push hundred lines of code changes instantly without affecting the 
 quality of service. This has allowed them to push releases faster, reduce the lead time between bug fixes, streamline continuous delivery with automation and reduce manpower costs
+
+
+What are the benefits of Version control?
+
+Everyone can work on the same project concurrently and integrate their changes into a single version
+With VC, you can see what changes were made when and who made those changes
+Eveeryone would have a snapshot of the entire project at every instance, allowing for rollbacks to be performed
