@@ -86,5 +86,7 @@ IaaS to administer cloud resources
 
 
 How is IaC implemented in AWS?
+
 Instead of the old way of writing script files and testing them in different environments, with IaC developers now can write, test and descriptively maintain infrastructure using formats like json and yaml. This makes development more 
 efficient and easy
+
