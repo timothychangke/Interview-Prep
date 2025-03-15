@@ -110,3 +110,15 @@ Release branch: branches off the main branch when sufficient changes have been m
 given a new version number to be released
 Feature branch: when working on a new feature, a feature branch branches off from develop. Once the modifications are made, this bracnh is merged into master. Automated testing must also pass First
 Task branch: In this model, every task is implemented in their respective branch
+
+
+What is "Shift Left to reduce failure" mean?
+
+Typically, testing is done just prior to release. This means that the release will be delayed until the bug fixing is done. Shift left is the practice where defects are found and prevented early in the SDLC. The idea is to improve quality by 
+moving tasks to the left as early as possible. The shift left represents shifting the testings done on the graph of progress to the left
+
+
+What is Blue Green Deployment?
+
+The principle requries the creation of two seperate identical environments, one blue and one green. The blue environment contains the current codebase while the green environment contains the new codebase. This will simply the rollback process
+in the event that the deployment fails, reducing deployment risk. Once testing is done in the green environment, traffic is progressively directed to the green environment until all traffic is there. The blue environment is then depreciated.
