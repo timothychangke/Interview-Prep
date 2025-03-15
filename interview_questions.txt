@@ -122,3 +122,9 @@ What is Blue Green Deployment?
 
 The principle requries the creation of two seperate identical environments, one blue and one green. The blue environment contains the current codebase while the green environment contains the new codebase. This will simply the rollback process
 in the event that the deployment fails, reducing deployment risk. Once testing is done in the green environment, traffic is progressively directed to the green environment until all traffic is there. The blue environment is then depreciated.
+
+
+What is continous Testing?
+
+Continous testing is constuting automated testing the the principle of constant testing throughout the software development lifecycle. This allows defects to be detected early and ensure the high quality of code. Overall, it would accelerate
+delivery and eliminate any testing bottlenecks
