@@ -133,3 +133,10 @@ delivery and eliminate any testing bottlenecks
 What are the benefits of automated testing?
 
 Test can be run in parallel and need not be attended. A wide test coverage can thus be covered. This sames money and time.
+
+
+How to automate testing in the devops lifecycle?
+
+All code bases must be pushed to a common devops repository. After each push, Jenkins-like continous intergration tools will pick up the codebase and deploy it for continuous testing with tools like Selenium
+Jenkins is a open source automation server used for CI/CD. it helps automate building, testing, and deployment by detecting changes ans triggering an automated build
+Code is compiled and then tested via tools like selenium
