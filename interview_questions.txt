@@ -102,3 +102,10 @@ What are the benefits of Version control?
 Everyone can work on the same project concurrently and integrate their changes into a single version
 With VC, you can see what changes were made when and who made those changes
 Eveeryone would have a snapshot of the entire project at every instance, allowing for rollbacks to be performed
+
+
+Describe branching strategies
+Release branch: branches off the main branch when sufficient changes have been made for a new release. Once branched off, no new features can be made apart from documentation and bug fixes. This release branch is then merged into master and 
+given a new version number to be released
+Feature branch: when working on a new feature, a feature branch branches off from develop. Once the modifications are made, this bracnh is merged into master. Automated testing must also pass First
+Task branch: In this model, every task is implemented in their respective branch
