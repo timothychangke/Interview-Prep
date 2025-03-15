@@ -145,3 +145,9 @@ Code is compiled and then tested via tools like selenium
 Why is Continous Testing important?
 
 It allows for continous testing of any code modification. This prevents testing bottle necks and quaility issues when testing is delayed until the end of the cycle
+
+
+What are the key elements for continuous testing?
+
+Automated testing, integration with CI/CD tools, testing on multiple environments, load testing, security testing, test data management, reporting and monitoring and containerisation. These are done with tools like Selenium, playwright, 
+cypress, Jenkins, github actions, gitlab, selenium grid, mockeroo, JMeter, Gatling, OWasp Zap, ELK stalk, Prometheus, AWS lambda, kubernetes
