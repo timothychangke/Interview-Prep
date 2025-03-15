@@ -128,3 +128,8 @@ What is continous Testing?
 
 Continous testing is constuting automated testing the the principle of constant testing throughout the software development lifecycle. This allows defects to be detected early and ensure the high quality of code. Overall, it would accelerate
 delivery and eliminate any testing bottlenecks
+
+
+What are the benefits of automated testing?
+
+Test can be run in parallel and need not be attended. A wide test coverage can thus be covered. This sames money and time.
