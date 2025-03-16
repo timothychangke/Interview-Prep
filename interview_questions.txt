@@ -174,3 +174,8 @@ What is the difference between a bare git repo and the conventional way of initi
 
 git init - initialises the current working directory as a git repository, and creates a .git subfolder to store version history. This is for individual development
 git init --bare - doesnt create a working directory but will still have a .git subfolder. This is for remote repositories
+
+
+How to revert commit?
+
+git revert <commit hash> - will create a new commit that reverts the changes done in the previous commit 
