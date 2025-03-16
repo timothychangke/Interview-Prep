@@ -198,3 +198,8 @@ Difference between git merge and git rebase?
 These are used when you want to have the new updates to the main branch be reflected while you are still working on your feature branch
 git merge - merges the commits of your main to your feature but adds a merge commit
 git rebase - copies all the commits from your main branch and places your feature branch commits in front of the branch
+
+
+How to find a list of files that have been changed in a commit?
+
+git diff-tree -r <commit hash>
