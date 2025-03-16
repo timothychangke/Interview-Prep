@@ -151,3 +151,9 @@ What are the key elements for continuous testing?
 
 Automated testing, integration with CI/CD tools, testing on multiple environments, load testing, security testing, test data management, reporting and monitoring and containerisation. These are done with tools like Selenium, playwright, 
 cypress, Jenkins, github actions, gitlab, selenium grid, mockeroo, JMeter, Gatling, OWasp Zap, ELK stalk, Prometheus, AWS lambda, kubernetes
+
+
+What is the difference between a centralised and a distributed version control system?
+
+In a centralised version control system, no one user has the entire codebase locally. They would have to connect to the central system inorder to push changes. If the central server goes down, the codebase is lost
+When distributed, every user has a local copy of the entire codebase. Users can work independently and changes are then pushed and merged centrally when needed
