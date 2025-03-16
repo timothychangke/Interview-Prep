@@ -191,3 +191,10 @@ What is git stash?
 
 git stash - allows a user to switch to another branch without having to commit the the changes to the current branch. git stash saves the modified changes into a stack which can then be popped and reapplied when the
 user comes back to that branch
+
+
+Difference between git merge and git rebase?
+
+These are used when you want to have the new updates to the main branch be reflected while you are still working on your feature branch
+git merge - merges the commits of your main to your feature but adds a merge commit
+git rebase - copies all the commits from your main branch and places your feature branch commits in front of the branch
