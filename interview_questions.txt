@@ -162,3 +162,15 @@ When distributed, every user has a local copy of the entire codebase. Users can 
 How do you download a git repo to your local machine?
 
 Git clone
+
+
+How do you push a file from your local machine to a git repo?
+
+Git remote add origin (github url)
+git push origin master
+
+
+What is the difference between a bare git repo and the conventional way of initialising git?
+
+git init - initialises the current working directory as a git repository, and creates a .git subfolder to store version history. This is for individual development
+git init --bare - doesnt create a working directory but will still have a .git subfolder. This is for remote repositories
