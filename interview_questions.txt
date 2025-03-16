@@ -185,3 +185,9 @@ What is the difference between git pull and git fetch?
 
 git fetch - downloads the changes of your remote repository to your local machine but does not merge them into your current branch
 git pull - a combination of git fetch and git merge where it downloads the changes of your remote repository to your local machine and then merges it into your current working branch
+
+
+What is git stash?
+
+git stash - allows a user to switch to another branch without having to commit the the changes to the current branch. git stash saves the modified changes into a stack which can then be popped and reapplied when the
+user comes back to that branch
