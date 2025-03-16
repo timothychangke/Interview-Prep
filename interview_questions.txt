@@ -203,3 +203,8 @@ git rebase - copies all the commits from your main branch and places your featur
 How to find a list of files that have been changed in a commit?
 
 git diff-tree -r <commit hash>
+
+
+What is git bisect?
+
+git bisect - uses binary search to identify the first bad commit out of all the good and bad commits
