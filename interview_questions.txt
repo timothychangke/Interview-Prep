@@ -179,3 +179,9 @@ git init --bare - doesnt create a working directory but will still have a .git s
 How to revert commit?
 
 git revert <commit hash> - will create a new commit that reverts the changes done in the previous commit 
+
+
+What is the difference between git pull and git fetch?
+
+git fetch - downloads the changes of your remote repository to your local machine but does not merge them into your current branch
+git pull - a combination of git fetch and git merge where it downloads the changes of your remote repository to your local machine and then merges it into your current working branch
