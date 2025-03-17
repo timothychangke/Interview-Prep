@@ -226,3 +226,8 @@ Pipeline: User-defined model of CD that builds, tests, and delivers application
 Node: A machine in the Jenkins environment that executes a pipeline
 Step: a single task in the pipeline
 Stage: a distinct subset of steps to be performed through the entire pipeline process (build, test, deploy steps)
+
+
+What is Maven?
+
+It is a core automation tool used for java projects. It simplifies the process of compiling, testing, packaging and deploying java projects. It is configured via a pom.xml
