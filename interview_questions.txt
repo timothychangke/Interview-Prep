@@ -220,3 +220,9 @@ What is a Jenkins file?
 It is a declarative script that defines a Jenkins pipeline. It allows you to automate builds, test and deployments. java -ajr Jenkins.war runs the jenkins file on the command line
 
 
+Key concepts of Jenkins pipeline:
+
+Pipeline: User-defined model of CD that builds, tests, and delivers application
+Node: A machine in the Jenkins environment that executes a pipeline
+Step: a single task in the pipeline
+Stage: a distinct subset of steps to be performed through the entire pipeline process (build, test, deploy steps)
