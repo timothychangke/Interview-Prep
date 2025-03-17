@@ -217,4 +217,6 @@ The Jenkins master will kick start the CI process on a commit to a github reposi
 
 What is a Jenkins file?
 
-It is a declarative script that defines a Jenkins pipeline. It allows you to automate builds, test and deployments
+It is a declarative script that defines a Jenkins pipeline. It allows you to automate builds, test and deployments. java -ajr Jenkins.war runs the jenkins file on the command line
+
+
