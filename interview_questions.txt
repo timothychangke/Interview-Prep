@@ -231,3 +231,13 @@ Stage: a distinct subset of steps to be performed through the entire pipeline pr
 What is Maven?
 
 It is a core automation tool used for java projects. It simplifies the process of compiling, testing, packaging and deploying java projects. It is configured via a pom.xml
+
+
+Explain two types of pipelines in Jenkins?
+
+Executes pipeline, defines build stage, perform build steps, defines test stage, perform test steps, defines deploy stage, performs deploy steps
+
+
+How to create a backup in Jenkins?
+
+Copy the jenkins_home directory, which contains job configurations, slave node configurations and build history
