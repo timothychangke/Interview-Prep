@@ -241,3 +241,8 @@ Executes pipeline, defines build stage, perform build steps, defines test stage,
 How to create a backup in Jenkins?
 
 Copy the jenkins_home directory, which contains job configurations, slave node configurations and build history
+
+
+How to copy jenkins from one server to another?
+
+Copy the Job directory 
