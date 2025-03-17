@@ -246,3 +246,10 @@ Copy the jenkins_home directory, which contains job configurations, slave node c
 How to copy jenkins from one server to another?
 
 Copy the Job directory 
+
+
+Name three security mechanisms Jenkins uses to authenticate users?
+
+Jenkins uses an internal database to store usernames and passwords
+Jenkins uses LDAP to authenticate users and check group permissions
+Jenkins can be configured to employ authentication methods used by application servers
