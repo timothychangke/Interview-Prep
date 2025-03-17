@@ -208,3 +208,8 @@ git diff-tree -r <commit hash>
 What is git bisect?
 
 git bisect - uses binary search to identify the first bad commit out of all the good and bad commits
+
+
+Explain the Master-slave architecture of Jenkins?
+
+The Jenkins master will kick start the CI process on a commit to a github repository. The workload is distributed to the slaves, who then build, test and produce test reports
