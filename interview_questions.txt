@@ -253,3 +253,10 @@ Name three security mechanisms Jenkins uses to authenticate users?
 Jenkins uses an internal database to store usernames and passwords
 Jenkins uses LDAP to authenticate users and check group permissions
 Jenkins can be configured to employ authentication methods used by application servers
+
+
+What are the different selenium comopnents?
+
+Selenuium Webbrowser: automates interactions with the web browser
+Selenuium IDE: records and replays testing on the browser
+Selenium Grid: allows for parallel testing on multiple browsers
