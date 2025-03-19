@@ -260,3 +260,14 @@ What are the different selenium comopnents?
 Selenuium Webbrowser: automates interactions with the web browser
 Selenuium IDE: records and replays testing on the browser
 Selenium Grid: allows for parallel testing on multiple browsers
+
+
+What are the different exceptions in selenium webdriver
+
+Timeout exceptions
+NoSuchElement exceptions
+NoSuchWindow exceptions
+ElementNotVisible exception
+Webdriver exception
+
+
