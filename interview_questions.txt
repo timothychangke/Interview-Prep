@@ -271,3 +271,9 @@ ElementNotVisible exception
 Webdriver exception
 
 
+What are the different testing types of selenium
+Functional testing: ensure that the application meets the functional requirements of the project
+    example: clicking of buttons, filling up forms, etc
+Regression testing: enture that the new features do not break existing functionality
+    example: test previous test cases on new features
+Load testing: ensure performance, responsiveness, speed, etc
