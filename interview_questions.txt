@@ -312,3 +312,8 @@ How is a swarm created?
 Create the swarm where you want your manager node to be
 Once you have your manager node, you can create your worker nodes
 Using the manager node key, initialise the worker nodes in the host machine where you want the node to reside in
+
+
+How do you run multiple container with a single service?
+
+You can do this with docker compose. With docker compose, multiple containers are run in isolation but can interact with one another. Docker compose files are YAML files
