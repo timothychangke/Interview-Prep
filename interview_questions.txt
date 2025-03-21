@@ -305,3 +305,10 @@ VMs use more memory, have slower start times, are less scalable, multiple vms ar
 How do we share docker containers with different nodes?
 
 We use a docker swarm. A docker swarm allows devs to create and manage a cluster of docker swarm nodes within the docker platform. A docker swarm has worker and master nodes
+
+
+How is a swarm created?
+
+Create the swarm where you want your manager node to be
+Once you have your manager node, you can create your worker nodes
+Using the manager node key, initialise the worker nodes in the host machine where you want the node to reside in
