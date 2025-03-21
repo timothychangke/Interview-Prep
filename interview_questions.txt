@@ -317,3 +317,11 @@ Using the manager node key, initialise the worker nodes in the host machine wher
 How do you run multiple container with a single service?
 
 You can do this with docker compose. With docker compose, multiple containers are run in isolation but can interact with one another. Docker compose files are YAML files
+
+
+What is a dockerfile used for/
+
+A docker file is used to creating docker images using a build command
+With the images, users can spin up the docker container
+A docker registry is used to store these docker images
+A user can then retrive the docker image from this docker registry and build new containers whenever they want
