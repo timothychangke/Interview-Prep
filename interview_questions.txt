@@ -325,3 +325,9 @@ A docker file is used to creating docker images using a build command
 With the images, users can spin up the docker container
 A docker registry is used to store these docker images
 A user can then retrive the docker image from this docker registry and build new containers whenever they want
+
+
+Docker Image vs Docker container
+
+Docker Image is a template to build docker containers while docker containers are runtime instances of docker images. Docker images are stored in a docker repository while docker containers are stored in docker daemons.
+Docker images are build with docker files while docker containers are built with docker images. Docker images are read only file systems while docker containers are read and write file systems
