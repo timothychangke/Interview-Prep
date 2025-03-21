@@ -336,3 +336,9 @@ Docker images are build with docker files while docker containers are built with
 How to create a docker container?
 
 You can either built your own image or pull an existing docker image. With this, you can then create a new container from the docker image
+
+
+Docker registry vs docker repository
+
+A docker registry is an opensource server-side service that hosts and distributes docker images while a docker repository holds versions of docker images. A docker repositor distinguishs images via tag names, a docker repository is stored in a registry. 
+docker has its own registry called dockerhub while repositories are either public or private
