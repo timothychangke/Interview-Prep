@@ -295,3 +295,8 @@ The docker daemon accepts requests and interacts with the operating system to bu
 A docker image contains instructions on how to build a docker container
 A docker container is an executable package of the application and its dependencies
 A docker registry is a service that hosts and distributes docker images amongst users
+
+
+Advantages of using docker over virtual machines
+
+VMs use more memory, have slower start times, are less scalable, multiple vms are unstable (multiple docker containers with one docker engine works), has compatibility issues, cannot share data volumes
