@@ -300,3 +300,8 @@ A docker registry is a service that hosts and distributes docker images amongst 
 Advantages of using docker over virtual machines
 
 VMs use more memory, have slower start times, are less scalable, multiple vms are unstable (multiple docker containers with one docker engine works), has compatibility issues, cannot share data volumes
+
+
+How do we share docker containers with different nodes?
+
+We use a docker swarm. A docker swarm allows devs to create and manage a cluster of docker swarm nodes within the docker platform. A docker swarm has worker and master nodes
