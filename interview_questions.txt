@@ -278,3 +278,20 @@ Functional testing: ensure that the application meets the functional requirement
 Regression testing: enture that the new features do not break existing functionality
     example: test previous test cases on new features
 Load testing: ensure performance, responsiveness, speed, etc`
+
+
+How would you run a command on multiple servers in a devops environment
+1. SSH in a loop
+2. Ansible, configuration with playbooks
+3. PSSH
+4. if in a kubernetes environment, use kubectl
+
+
+Explain the architecture of Docker?
+
+Docker uses a client server architecture
+Docker client is a service that runs commands. The commands are sent via REST api to the docker daemon
+The docker daemon accepts requests and interacts with the operating system to build docker images and run docker containers
+A docker image contains instructions on how to build a docker container
+A docker container is an executable package of the application and its dependencies
+A docker registry is a service that hosts and distributes docker images amongst users
