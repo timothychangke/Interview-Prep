@@ -1,1 +1,1 @@
-    Consistency: The database transitions from one valid state to another, maintaining integrity.
+    Isolation: Transactions are executed independently, preventing conflicts.
