@@ -1,1 +1,1 @@
-Computers exchange data over a network using IP addresses and networking protocols.
+    IPv4: A 32-bit address format supporting 4 billion unique addresses.
