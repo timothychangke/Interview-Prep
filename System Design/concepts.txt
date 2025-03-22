@@ -1,1 +1,1 @@
-    Throughput: The amount of data a system can handle over time (e.g., requests per second, database queries per second, or bytes transferred per second).
+    Latency: The time taken for a request to receive a response.
