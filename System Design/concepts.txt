@@ -1,1 +1,1 @@
-For data storage, the application interacts with dedicated database servers, ensuring data is managed separately from the main application logic.
+To maintain system reliability, logging and monitoring systems (e.g., Sentry and PM2) continuously track application activity. When an issue occurs, alerts can be sent via an alerting service (such as Slack integration), notifying the development team.
