@@ -1,1 +1,1 @@
-Performance is measured through speed and throughput:
+    Throughput: The amount of data a system can handle over time (e.g., requests per second, database queries per second, or bytes transferred per second).
