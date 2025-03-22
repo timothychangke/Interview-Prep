@@ -136,4 +136,29 @@ Every network message is sent with an IP header, following the Internet Protocol
 By understanding these concepts, engineers can build scalable, reliable, and efficient systems.
 
 
-test
+Transport layer
+
+This is where TCP and UDP come into play
+
+TCP (Transmission Control Protocol) operates at the transport layer and ensures reliable communication, checking that not only the packet arrives, but that nothing is missing. Each TCP data header has a specified source port number, destination port number, 
+sequence number to make sure that the packets arrive on sequence, acknowledgement number, flags and checksums to make sure that no data is lost.
+
+Processes like the 3 way handshake establishes reliable connection between two devices before packets are sent
+
+In contrast, there is UDP (User Datagram Protocol). It is faster but less reliable. There is not established connection between the two sources and it does not guarantee the order and delivery of data packets.But this is 
+what makes UDP prefered in time crucial activities where data loss can be accepted 
+
+
+DNS (Domain name System) is the internet's phonebook, translating internet domain names to ip addresses that computers can understand. When you enter a url into your browser, the browser then sends a dns query to the
+dns server to find the corresponding ip address, allowing it to establish the connection and retrive the webpage. Domain name site like godaddy are creditted by ICANN to sell domain names to the public
+
+DNS records
+AAAA records map a domain name to an IPv6 address while A records map a domani anme to an IPv4 address
+
+
+Networking Infrastructure
+
+Devices on the network have either public or private IP addresses. Public address are unique across the internet while private ip addresses are unique across the local network. The can also be static or dynamic, where a 
+dynamic ip address is used for residential internet connection. 
+
+LANs (Local Area Networks) are protected by firewalls which monitor and control incoming and outgoing traffic. Ports, together with an ip address, creates a unique identifier for a network service. 
