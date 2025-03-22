@@ -1,1 +1,1 @@
-    Durability: Once a transaction is committed, it remains permanent, even in case of system failures.
+CAP Theorem
