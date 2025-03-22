@@ -1,1 +1,1 @@
-Optimizing for one may negatively impact the other. For example, batching requests can improve throughput but may increase latency.
+System Design Considerations
