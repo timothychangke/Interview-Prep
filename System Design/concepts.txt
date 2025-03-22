@@ -162,3 +162,32 @@ Devices on the network have either public or private IP addresses. Public addres
 dynamic ip address is used for residential internet connection. 
 
 LANs (Local Area Networks) are protected by firewalls which monitor and control incoming and outgoing traffic. Ports, together with an ip address, creates a unique identifier for a network service. 
+
+
+Application layer
+
+HTTP (Hyper text transfer protocol) is built on tcp/ip. It is a communications protocol but with no memory, meaning each interaction is seperate. Server does not store any context in each request. Each request contains
+status codes, request urls, methods, request payload and request body
+
+Success codes: 200 are success codes, 300 are redirection codes (resource has relocated), 400 are client error codes(bad syntax or request cannot be fulfilled), 500 server error codes (server error codes)
+
+HTTP also contain methods on request: 
+Get: getting data from server
+Post: creating data on the server 
+Put: updates a resource completely
+Patch: updates a portion of the data
+Delete: delete a resource
+
+For real time updates, websockets are used to provide two way communication channel between two nodes. This is usually used for chat room messaging platforms, live sports updates or stock market movements
+
+SMTP is the standard email protocol for email transmission over the internet. IMAP or POP3 are used for receiving them. IMAP is used to retrieve emails from servers and edit them. It is required for retriving emails from 
+multiple devices. POP3 is used for downloading email from a server to a local client. This is usually used when emails are read on a single device. 
+
+File transfer protocols. FTP: is used for data maintenance and large data transfers. It is used to upload files from client to server, to other servers and backing up files. SSH is also a way to operate servers remotely and 
+securely on an unsecure network
+
+Realtime communication protocols like WebRTC, which enables browser to browser applications for voice calling, video chatting and file sharing. MQTT (Message Queuing Telemetry Transport) is a light weight messaging protocol 
+for devices with limited processing power and low bandwidth such as IoT devices. AMQP (Advanced Messaging Queuing Protocol) is for message-oriented middleware.
+
+RPC (Remote Procedure Call) allows one computer to execute code on another computer remotely. It executes functions like it is a local call but in reality the function is in a remote machine. It abstracts the details
+of interacting with a server far away and makes it seem to the user that the interactions are all local in nature. 
