@@ -1,1 +1,1 @@
-Every system design decision involves trade-offs. For example, optimizing read performance may come at the cost of write performance, and increasing speed may introduce additional complexity. The goal is not always to find the perfect solution, but to make informed compromises based on system priorities.
+System Availability
