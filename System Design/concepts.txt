@@ -1,1 +1,1 @@
-Availability is tracked through uptime and downtime metrics.
+    Service Level Objectives (SLOs) define performance goals, such as maintaining a 300ms response time and 99.9% uptime.
