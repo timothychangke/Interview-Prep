@@ -1,1 +1,1 @@
-ACID is a set of principles ensuring reliable database transactions:
+    Atomicity: If any part of a transaction fails, the entire transaction is rolled back.
