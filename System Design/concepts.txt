@@ -1,1 +1,1 @@
-    Availability: Ensures that the system remains operational and responsive to requests.
+    Partition Tolerance: Ensures that the system can continue functioning even if some nodes are unreachable.
