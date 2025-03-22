@@ -1,1 +1,1 @@
-Availability measures a system's performance and reliability, often expressed as a percentage:
+    99.9% availability → approximately 8.76 hours of downtime per year.
