@@ -1,1 +1,1 @@
-System Design Considerations
+Designing scalable and secure systems is a long-term investment. Unlike application code, redesigning an entire system is complex and costly, making upfront planning critical.
