@@ -1,1 +1,1 @@
-Computer disk storage holds the primary data and is classified into two main types: HDD (Hard Disk Drive) and SSD (Solid State Drive). Disk storage is non-volatile, meaning data is maintained even without power. It contains the operating system, applications, and user files. While SSDs are more expensive, they offer significantly faster read speeds compared to HDDs.
+Random Access Memory (RAM)
