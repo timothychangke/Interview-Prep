@@ -1,1 +1,136 @@
+Computer Architecture and System Design
+
+
+Computer Disk Storage
+
+Computer disk storage holds the primary data and is classified into two main types: HDD (Hard Disk Drive) and SSD (Solid State Drive). Disk storage is non-volatile, meaning data is maintained even without power. It contains the operating system, applications, and user files. While SSDs are more expensive, they offer significantly faster read speeds compared to HDDs.
+Random Access Memory (RAM)
+
+RAM is the primary memory that stores data from applications currently in use. When an application is running, its variables, intermediate computations, and runtime stack are stored in RAM because of its fast read and write access. However, RAM is volatile, meaning it requires power to retain data. Once the computer is turned off or restarted, all data in RAM is lost.
+
+Since RAM may not always be sufficient, a cache memory is used to improve performance. The cache is smaller than RAM (typically measured in megabytes) but provides much faster access times. The CPU first checks the L1 cache, then moves to L2 and L3 caches, and finally RAM if the data is not found in the cache. The purpose of caching is to reduce the average time required to retrieve data.
+Central Processing Unit (CPU)
+
+The CPU is the brain of the computer, responsible for fetching, decoding, and executing instructions. When a program is executed, the CPU processes the instructions by reading and writing data to RAM, disk storage, and cache. Before execution, code must first be compiled into machine code by a compiler.
+Motherboard
+
+The motherboard acts as the main circuit board, providing pathways for data to flow between components, ensuring communication between the CPU, RAM, disk storage, and peripheral devices.
+High-Level Architecture of a Production-Ready Application
+
+A CI/CD pipeline automates the deployment process, moving code from a repository to the production server. This is typically configured using tools such as Jenkins or GitHub Actions.
+
+Once in production, the application must handle multiple user requests efficiently. This is achieved using load balancers and reverse proxies, which distribute user requests across multiple servers to prevent any single server from becoming overloaded.
+
+For data storage, the application interacts with dedicated database servers, ensuring data is managed separately from the main application logic.
+
+To maintain system reliability, logging and monitoring systems (e.g., Sentry and PM2) continuously track application activity. When an issue occurs, alerts can be sent via an alerting service (such as Slack integration), notifying the development team.
+
+The typical debugging workflow involves three key steps:
+
+    Identify the issue through logs and monitoring.
+
+    Replicate the problem in a staging or testing environment.
+
+    Apply a hotfix and deploy it to production.
+
+
+Pillars of System Design
+
+A well-designed system should focus on the following key principles:
+
+    Scalability: The system should support a growing number of users and increased workload without degradation in performance.
+
+    Maintainability: The system should be structured so that future developers can easily modify and improve it.
+
+    Efficiency: Resources should be used optimally to ensure cost-effectiveness and high performance.
+
+    Reliability: The system should function correctly and consistently under normal conditions, minimizing downtime and failures.
+
+By adhering to these principles, a production-ready system can be built to handle large-scale operations effectively.
+
+Data Management and System Design
+Moving Data
+
+Ensuring data can be transferred seamlessly across systems requires optimizing for speed and security. Efficient data movement is crucial for maintaining system performance and preventing bottlenecks.
+Storing Data
+
+Data storage strategies depend on access patterns, indexing techniques, and backup solutions. The goal is to ensure data is securely stored and readily available when needed. Proper storage planning prevents data loss and improves query performance.
+Data Transformation
+
+Transforming raw data into meaningful information is a critical aspect of data management. This includes data cleaning, aggregation, and structuring to make insights actionable.
+ACID Properties in Databases
+
+ACID is a set of principles ensuring reliable database transactions:
+
+    Atomicity: If any part of a transaction fails, the entire transaction is rolled back.
+
+    Consistency: The database transitions from one valid state to another, maintaining integrity.
+
+    Isolation: Transactions are executed independently, preventing conflicts.
+
+    Durability: Once a transaction is committed, it remains permanent, even in case of system failures.
+
+
+CAP Theorem
+
+CAP theorem highlights the trade-offs in a distributed system and states that a system can only guarantee two out of three properties:
+
+    Consistency: Ensures that all nodes in the system have the same data at any given time. Any update on one node is reflected in all others.
+
+    Availability: Ensures that the system remains operational and responsive to requests.
+
+    Partition Tolerance: Ensures that the system can continue functioning even if some nodes are unreachable.
+
+Every system design decision involves trade-offs. For example, optimizing read performance may come at the cost of write performance, and increasing speed may introduce additional complexity. The goal is not always to find the perfect solution, but to make informed compromises based on system priorities.
+System Availability
+
+Availability measures a system's performance and reliability, often expressed as a percentage:
+
+    99.9% availability → approximately 8.76 hours of downtime per year.
+
+    99.999% availability → approximately 5 minutes of downtime per year.
+
+Availability is tracked through uptime and downtime metrics.
+
+    Service Level Objectives (SLOs) define performance goals, such as maintaining a 300ms response time and 99.9% uptime.
+
+    Service Level Agreements (SLAs) are formal agreements specifying expected latency and availability for end users.
+
+
+System Resilience
+
+Resilience ensures a system can recover from failures through strategies like redundant backups or graceful degradation. It is evaluated using:
+
+    Reliability: The system consistently operates correctly.
+
+    Fault Tolerance: The system's ability to handle failures without downtime.
+
+    Redundancy: Backup components that can take over in case of failures.
+
+System Performance
+
+Performance is measured through speed and throughput:
+
+    Throughput: The amount of data a system can handle over time (e.g., requests per second, database queries per second, or bytes transferred per second).
+
+    Latency: The time taken for a request to receive a response.
+
+Optimizing for one may negatively impact the other. For example, batching requests can improve throughput but may increase latency.
+System Design Considerations
+
+Designing scalable and secure systems is a long-term investment. Unlike application code, redesigning an entire system is complex and costly, making upfront planning critical.
+
+
+Networking Basics
+
+How Computers Communicate
+
+Computers exchange data over a network using IP addresses and networking protocols.
+
+    IPv4: A 32-bit address format supporting 4 billion unique addresses.
+
+    IPv6: A 64-bit address format supporting 304 trillion unique addresses, designed to address IPv4 limitations.
+
+Every network message is sent with an IP header, following the Internet Protocol (IP) to ensure proper data routing across the internet.
+
 By understanding these concepts, engineers can build scalable, reliable, and efficient systems.
