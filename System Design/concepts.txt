@@ -1,1 +1,1 @@
-    Identify the issue through logs and monitoring.
+    Replicate the problem in a staging or testing environment.
