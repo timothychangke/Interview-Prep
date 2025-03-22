@@ -1,1 +1,1 @@
-Since RAM may not always be sufficient, a cache memory is used to improve performance. The cache is smaller than RAM (typically measured in megabytes) but provides much faster access times. The CPU first checks the L1 cache, then moves to L2 and L3 caches, and finally RAM if the data is not found in the cache. The purpose of caching is to reduce the average time required to retrieve data.
+Central Processing Unit (CPU)
