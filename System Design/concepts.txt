@@ -1,1 +1,1 @@
-    99.999% availability → approximately 5 minutes of downtime per year.
+Availability is tracked through uptime and downtime metrics.
