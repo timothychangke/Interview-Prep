@@ -1,1 +1,1 @@
-    Service Level Agreements (SLAs) are formal agreements specifying expected latency and availability for end users.
+System Resilience
