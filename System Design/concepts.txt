@@ -1,1 +1,1 @@
-Pillars of System Design
+A well-designed system should focus on the following key principles:
