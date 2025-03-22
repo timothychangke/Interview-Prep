@@ -1,1 +1,1 @@
-ACID Properties in Databases
+ACID is a set of principles ensuring reliable database transactions:
