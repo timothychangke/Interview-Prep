@@ -1,1 +1,1 @@
-    IPv4: A 32-bit address format supporting 4 billion unique addresses.
+    IPv6: A 64-bit address format supporting 304 trillion unique addresses, designed to address IPv4 limitations.
