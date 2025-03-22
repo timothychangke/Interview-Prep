@@ -1,1 +1,1 @@
-    Maintainability: The system should be structured so that future developers can easily modify and improve it.
+    Efficiency: Resources should be used optimally to ensure cost-effectiveness and high performance.
