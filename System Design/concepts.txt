@@ -1,1 +1,1 @@
-    Fault Tolerance: The system's ability to handle failures without downtime.
+    Redundancy: Backup components that can take over in case of failures.
