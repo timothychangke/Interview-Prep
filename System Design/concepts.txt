@@ -1,1 +1,1 @@
-Every network message is sent with an IP header, following the Internet Protocol (IP) to ensure proper data routing across the internet.
+By understanding these concepts, engineers can build scalable, reliable, and efficient systems.
