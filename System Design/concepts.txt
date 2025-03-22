@@ -1,1 +1,1 @@
-How Computers Communicate
+Computers exchange data over a network using IP addresses and networking protocols.
