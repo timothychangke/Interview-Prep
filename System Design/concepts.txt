@@ -1,1 +1,1 @@
-A well-designed system should focus on the following key principles:
+    Scalability: The system should support a growing number of users and increased workload without degradation in performance.
