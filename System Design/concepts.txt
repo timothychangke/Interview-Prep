@@ -1,1 +1,1 @@
-    Redundancy: Backup components that can take over in case of failures.
+System Performance
