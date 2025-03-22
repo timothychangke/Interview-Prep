@@ -1,1 +1,1 @@
-A CI/CD pipeline automates the deployment process, moving code from a repository to the production server. This is typically configured using tools such as Jenkins or GitHub Actions.
+Once in production, the application must handle multiple user requests efficiently. This is achieved using load balancers and reverse proxies, which distribute user requests across multiple servers to prevent any single server from becoming overloaded.
