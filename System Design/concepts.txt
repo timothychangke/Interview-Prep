@@ -1,1 +1,1 @@
-To maintain system reliability, logging and monitoring systems (e.g., Sentry and PM2) continuously track application activity. When an issue occurs, alerts can be sent via an alerting service (such as Slack integration), notifying the development team.
+The typical debugging workflow involves three key steps:
