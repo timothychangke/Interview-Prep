@@ -21,7 +21,6 @@ def git_commit_push(file_path):
 
     subprocess.run(['git', 'add', file_path])
     subprocess.run(['git', 'commit', '-m', commit_message])
-    subprocess.run(['git', 'push'])
 
 if __name__ == '__main__':
     git_commit_push(file_path)
