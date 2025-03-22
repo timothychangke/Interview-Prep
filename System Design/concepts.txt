@@ -1,1 +1,1 @@
-    Latency: The time taken for a request to receive a response.
+Optimizing for one may negatively impact the other. For example, batching requests can improve throughput but may increase latency.
