@@ -1,1 +1,1 @@
-CAP Theorem
+CAP theorem highlights the trade-offs in a distributed system and states that a system can only guarantee two out of three properties:
