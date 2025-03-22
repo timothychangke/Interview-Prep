@@ -1,1 +1,1 @@
-    99.9% availability → approximately 8.76 hours of downtime per year.
+    99.999% availability → approximately 5 minutes of downtime per year.
