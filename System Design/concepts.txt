@@ -1,1 +1,1 @@
-Random Access Memory (RAM)
+RAM is the primary memory that stores data from applications currently in use. When an application is running, its variables, intermediate computations, and runtime stack are stored in RAM because of its fast read and write access. However, RAM is volatile, meaning it requires power to retain data. Once the computer is turned off or restarted, all data in RAM is lost.
