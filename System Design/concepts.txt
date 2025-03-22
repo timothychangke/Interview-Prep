@@ -1,1 +1,1 @@
-Once in production, the application must handle multiple user requests efficiently. This is achieved using load balancers and reverse proxies, which distribute user requests across multiple servers to prevent any single server from becoming overloaded.
+For data storage, the application interacts with dedicated database servers, ensuring data is managed separately from the main application logic.
