@@ -1,1 +1,1 @@
-System Performance
+Performance is measured through speed and throughput:
