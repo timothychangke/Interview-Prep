@@ -1,1 +1,1 @@
-    Isolation: Transactions are executed independently, preventing conflicts.
+    Durability: Once a transaction is committed, it remains permanent, even in case of system failures.
