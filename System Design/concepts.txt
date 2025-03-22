@@ -1,1 +1,1 @@
-Central Processing Unit (CPU)
+The CPU is the brain of the computer, responsible for fetching, decoding, and executing instructions. When a program is executed, the CPU processes the instructions by reading and writing data to RAM, disk storage, and cache. Before execution, code must first be compiled into machine code by a compiler.
