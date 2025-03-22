@@ -1,1 +1,1 @@
-System Availability
+Availability measures a system's performance and reliability, often expressed as a percentage:
