@@ -1,1 +1,1 @@
-    IPv6: A 64-bit address format supporting 304 trillion unique addresses, designed to address IPv4 limitations.
+Every network message is sent with an IP header, following the Internet Protocol (IP) to ensure proper data routing across the internet.
