@@ -1,1 +1,1 @@
-CAP theorem highlights the trade-offs in a distributed system and states that a system can only guarantee two out of three properties:
+    Consistency: Ensures that all nodes in the system have the same data at any given time. Any update on one node is reflected in all others.
