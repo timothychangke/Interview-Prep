@@ -1,1 +1,1 @@
-System Resilience
+Resilience ensures a system can recover from failures through strategies like redundant backups or graceful degradation. It is evaluated using:
