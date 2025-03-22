@@ -1,1 +1,1 @@
-    Reliability: The system consistently operates correctly.
+    Fault Tolerance: The system's ability to handle failures without downtime.
