@@ -1,1 +1,1 @@
-    Scalability: The system should support a growing number of users and increased workload without degradation in performance.
+    Maintainability: The system should be structured so that future developers can easily modify and improve it.
