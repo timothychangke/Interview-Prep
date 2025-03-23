@@ -254,4 +254,23 @@ useful for large files that are infrequently updated but need to be updated quic
 CDNs provide high availability and performance for users across different geographies. It also reduces the load on the origin server. However, an origin server should be used if the dynamic content changes frequently or is personalised to the
 user. If the tasks handled require real time processing or that there are complex server side logic required, then an origin server is still prefered   
 CDNs benefit: Reduces latency, high availability, and improved security
-Cache benefit: Reduce latency, lower server load, and improves UX 
+Cache benefit: Reduce latency, lower server load, and improves UX
+
+
+Proxies
+Proxy server is the intermediary between the client being served the resource and the server serving the resource. They help in caching resources, anonymising requests and load balancing
+
+Types of proxy servers:
+Forward proxy = sits in front of clients and is used to sent request to other servers on the internet. It is usually used in internal networks to control internet access
+Reverse proxy = sits in front of one or more web servers. It is used for load balancing and security
+Open proxy = allows anyone to access the proxy. It is used for annoymising web browsing and bypassing content restrictions
+Transparent proxy = content is visible to the cilent. It is used for caching and content filtering
+Annoymous proxy = used for annoymous browsing
+Distorting proxy = incorrect IP misinformation
+High Anonymity proxy = max anonymity with no headers
+
+When the client sends a request via a proxy, the proxy decides on whether to allow the request, modify it or block it. Something commonly done is that the proxy server will hide the client's ip address so that it cannot be identified by the server
+Example use case: controlling of internet use in companies, caching, anonymising web access
+
+Reverse proxies sit in front of servers and intercept request before they reach the server. The reverse proxy hides the servers identity. It also helps to distribute the load between multiple servers, making sure that no single server becomes overwhelmed. They also can 
+compress data, cache files and manange ssl encryption. CDNs are also a type of reverse proxies, where they deliver static content based on the geographical location of the user. Firewalls are also one other example
