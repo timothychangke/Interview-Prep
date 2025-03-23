@@ -274,3 +274,22 @@ Example use case: controlling of internet use in companies, caching, anonymising
 
 Reverse proxies sit in front of servers and intercept request before they reach the server. The reverse proxy hides the servers identity. It also helps to distribute the load between multiple servers, making sure that no single server becomes overwhelmed. They also can 
 compress data, cache files and manange ssl encryption. CDNs are also a type of reverse proxies, where they deliver static content based on the geographical location of the user. Firewalls are also one other example
+
+
+Load balancers
+
+The different types of task allocation:
+Round Robin: Each server in the pool gets a request in rotating order. This works well for servers with similar specifications and the load is evenly distributable. 
+Least Connections: Directs the load to the server with the fewest active connections. Ideal for when the server load is not evenly distributed
+Least Response Time: Chooses the server with the least response time and is the most effective if the goal is to process the request the fastest
+IP Hashing: makes Sures the client connects to the same server each time, ensuring connection persistence
+Weighted algorithms: Servers are assigned weights based on their performance metrics
+Geographical algorithms: Maps request to server closes to user location
+Consistent hashing: Uses a hash ring to map request to servers
+
+Load balancing can be hardware, software or cloud based solutions
+
+When a load balancer goes down, it will become a single point of failure. To prevent this, there are a few strategies that can be employed:
+1. Redundancy: using a redundant load balancer, for if one fails, the other one takes over = failover
+2. Continously do health checks
+3. Autoscale and self heal load balancers
