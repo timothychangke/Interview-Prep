@@ -191,3 +191,38 @@ for devices with limited processing power and low bandwidth such as IoT devices.
 
 RPC (Remote Procedure Call) allows one computer to execute code on another computer remotely. It executes functions like it is a local call but in reality the function is in a remote machine. It abstracts the details
 of interacting with a server far away and makes it seem to the user that the interactions are all local in nature. 
+
+
+API Design
+
+In api design, we are concerned about the input and the outputs, with the problem the definition of how the crud operations are exposed to the user interface. Create, read, update and delete. To create a product, you 
+send a post request to the create api end point with the data in the request body. To read, we send a get request. For updating, we either send a put or a patch request and for deleting we send a delete request. 
+
+Another portion of the design is to decide which protocol to use, either http, websockets or any other protocols as well as the data transport mechanism which can be json or xml
+
+Apart from rest, there are different type of paradiagms like graphql and gRPC
+
+REST (representational state transfer)
+- it is stateless, this means that each request must contain enough context for the request to be processed
+- Uses the standard HTTP methods: GPPPD
+- Compatible with most browsers and applications
+- use JSON for data exchange
+Downsides: might lead to overfetching or underfetching as more end points are needed for access specific data 
+
+GRAPHQL
+- avoids overfetching and underfetching for clients to request exactly what they need
+- they have strongly typed queries
+Downsides: these strongly typed queries might impace server performance, all request are sent only in post request and responses only in 200 (error details are in the response body)
+
+gRPC (google remote procedure call)
+- built on HTTP/2
+- uses multiplexing and server push
+- uses protocol buffers
+- efficient and useful for microservices
+Downsides: less human readable than json and requires http 2.0 to operate
+
+Api urls have references to other relationships if the query has one and will commonly contain other params as well. A well designed get request should be idempotent. When modifying endpoints, backward compatibility must be maintain
+
+Rate limits can also be added to prevent a single user from sending too many request to the api. Settings CORS settings (Cross origin resource sharing) can control which domains will have access to your api, preventing 
+unwanted cross site interactions
+
