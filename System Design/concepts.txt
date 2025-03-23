@@ -226,3 +226,32 @@ Api urls have references to other relationships if the query has one and will co
 Rate limits can also be added to prevent a single user from sending too many request to the api. Settings CORS settings (Cross origin resource sharing) can control which domains will have access to your api, preventing 
 unwanted cross site interactions
 
+
+Caching and CDN
+
+Caching is used to increase the performance and efficiency of a system. It requires storing a copy of data in a temporary storage so that future querying of that data can be served faster. When a requested object is in 
+the cache, it is a cache hit, while a cache miss is when the resource is not in the cache and must be retrived via a call to the server. The cache ratio is the ratio betwee the number of cache hits and cache hits + cache misses.
+
+Where is caching done?
+- Browser caching: website resources are stored in a users local computer. When the user reloads the site, the browser can load everything from the cache instead of refetching it from the server again. For each network response
+there are cache control attributes in the headers that state how long the object should be held in the cache. There also is a X-Cache header that specifies whether the cache hits or misses
+
+- Server caching: server data that are frequently retrieved are cache to reduce the expense of refetching them again (database queries are one such example of an expensive query). The server caches are stored on server or
+in a seperate cache server on disk or memory (redis). Typically a server will check the cache server, if the data is not there, then it will retrieve it from the database. After receiving the data, the server will then serve
+the data to the user and place it in the cache for future reference. 
+    - Write around cache is when every write operation is performed both in the cache and the database ast the same time. This is to ensure the cache is always
+updated but leads to high write latency. 
+    - Write through cache is when writes are only performed in the primary storage and the cache is written only when the object is requested. This is more efficient but leads to higher cache miss
+    - Write back cache is when write are done to the cache first, then to the database at a later time. This improves write performance but risks the loss of data if the cache server crashes
+    - When the cache is full, there are several eviction policies that are used to remove items from the cache. These are LRU, LFU and FIFO
+
+- Database Caching: It is often done within the database itself, or on a seperate layer like redis or memcache. A query will first go to the cache, only if it is a cache miss will the query then be returned to the database, which will then 
+store the data in the cache as well
+
+- CDNs (Content Delivery Networks): Are a collection of servers that are distributed geographically to serve static content or image/video files. The pull-based type of arrangement is when the content is a cache miss and the CDN will pull the 
+from the origin server. It is ideal for websites with alot of static content and requires less active management. The push-based arrangement is when content is uploaded to the origin server which then pushes the content to the CDNs. This is 
+useful for large files that are infrequently updated but need to be updated quickly. More active management is needed. 
+CDNs provide high availability and performance for users across different geographies. It also reduces the load on the origin server. However, an origin server should be used if the dynamic content changes frequently or is personalised to the
+user. If the tasks handled require real time processing or that there are complex server side logic required, then an origin server is still prefered   
+CDNs benefit: Reduces latency, high availability, and improved security
+Cache benefit: Reduce latency, lower server load, and improves UX 
