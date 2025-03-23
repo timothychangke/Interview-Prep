@@ -293,3 +293,32 @@ When a load balancer goes down, it will become a single point of failure. To pre
 1. Redundancy: using a redundant load balancer, for if one fails, the other one takes over = failover
 2. Continously do health checks
 3. Autoscale and self heal load balancers
+
+
+Database
+
+Relational database: postgres, mysql and sqllite. All of them use tables as a data storage and SQL as a query language. They are great for transactions, complex queries and integrity. They are also ACID Complient. 
+A: Atomicity = a transaction either fully suceeds or fully fails
+C: Consistency = the database will transition from one state to another state
+I: Isolation = Each transaction is independent of one another
+D: Durability = Once data is set, it will remain there forever
+
+NoSql databases drop the consistency property. Examples are mongodb, cassandra and redis. They can be document based, key value based or graph based. They do not possess foreign keys to connect tables together and are good for Scalability, quick iteration and simple queries
+
+In memory databases, redis and memcache, used primarily for cache and session storage
+
+Vertical scaling = scaling up the database by increasing CPU power, adding more RAM, adding more disk storage and upgrading the network
+Horizontal scaling = involves adding more machines to the existing pool of resources. Queries are distributed to a cluster of databases and will include the concepts of database sharding and replication
+ - Sharding: distributing different portions (shards) of the dataset across multiple servers
+    Sharding strategies include:
+        - range-based sharding: based on the range of a given key
+        - directory-based sharding: lookup service to direct traffic to the database
+        - geographical sharing: based on geographical location
+ - Replication: This is keeping copies of data on multiple servers for high availability
+         - Master-slave replication where you can have one read/write master database and multiple read only databases
+         - Master-Master replication where you can have multiple master databases
+
+Database performance
+ - Database Caching to cache frequent queries via tools like redis
+ - Indexing can boost your database to speed up retrieval time
+ - Query optimisation can make data retrival faster (minimise the use of joins) and use a query analysiser to improve performance
