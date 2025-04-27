@@ -1,0 +1,104 @@
+The Database Architecture can be split into a frontend section and a backend section
+
+Frontend section:
+- Network Layer
+    > This is how a client application Communicates with the database
+    > The client request comes in (typically a user query) via network protocols like TCP/IP
+    > The network layer handles things like authentication, authorisation, SSL encryption, connection pooling and session management
+- Query Tokenisation
+    > Breaks the raw query string into token keywords
+- Query Parsing
+    > Ensures that the stream of tokens are syntacially correctly
+    > Creates a parse tree using the query tokens
+    > Checks if the ordering of the keywords are correct and that there are no missing specifications
+- Query Optimisatino
+    > Takes the parse tree and finds the most optimal way to run the query
+    > Choose different execution plans like index scan or table scan/ join orders and algorithms and chooses the best one via cost estimation
+
+Backend Section
+
+The Query Engine
+- Query Executionor
+    > Receives the query plan and executes it. 
+    > Highly optimised to be pipelined, efficient and parallelised
+    > Performs table reads, joins, wheres, projections, sorting, grouping, transactions
+- Cache Management
+Constantly reading from disk is expensive and databases would want to read frequently accessed memory from RAM instead
+    > Buffer Pool: Caching of pages
+    > Execution Cache: Caching of query execution results
+    > Plan Cache: Caching of query plans
+    > Metadata Cache: Caches of schema like table structures, indexes, priviledges
+
+Utility Services
+Services that support the Query Engine
+- Transaction Management
+    > Overseas all transactions in the database
+    > ACID Atomicity enforcerl; Either the transaction completes entirely or doesn't happen at all
+    > Tracks and coordinates transaction management: From initiation, execution, commit/rollback
+    > Handles savepoints (partial rollbacks) and transaction timeouts
+- Lock Management
+    > Handles concurrency control, making sure that multiple transactions dont corrupt each other, enforcer of ACID Isolation
+    > Manage Locks: row locks, table locks, page locks
+    > Controls read/write conflicts: shared read lock, exclusive write locks
+    > Detects deadlocks: when two transactions are waiting for each other
+    > Manage Locking Queues
+- Recovery Management
+    > Enforcer of ACID Durability
+    > Performs Write Ahead Logging (WAL) which is logging an entry before modifications to the disk
+    > On crash, use WAL to redo commited transactions
+    > Maintain log files
+    > Save Snapshots on checkpoints
+    > Support rollbacks on failed transactions
+
+Concurrency Manager
+1. Lock-based concurrency control
+    > Assumes that concurrency issues are commonplace and manages them with locks
+    > Have shared locks for reads and exclusive locks for writes
+    > Lock manager decides who to assign the locks to 
+    > Deadlock detection and transaction timeouts management
+2. Optimic concurrency control
+    > Assumes that conflicts are rare
+    > When met with a conflict, transaction will rollback and try again
+3. Multiversion concurrency control
+    > Each write creates a new version instead of overwriting
+    > Readers see a snapshot of the data
+    > Readers dont block writers and writes dont block Readers
+    > However, need to manage the different versions and get rid of old ones
+
+Distribution
+- Shard Management
+Horizontal partitioning of database tables so that each table has a reduced load, optimising query performance and increases amount of data handled
+    > Deciding on good balanced shard key
+    > Shard routing
+    > Shard rebalancing: if one shard gets to big
+    > Handling Shard failures
+- Cluster Management
+Ensuring whole system performs like a single database even though it compromises of many different nodes
+- Replication Management
+Replication is about copying data across multiple nodes to ensure high availability (multiple backups when node is down), durability(data is not lost) and Scalability(more tables to read)
+    > Replica Creation
+    > Syncing of replicas
+        Synchronous Replication: All replicas confirm writes before success (slow)
+        Asynchronous Replication: Master node confirms write immediately before updating replicas later
+    > Conflict resolution
+    > Replication lag monitoring
+
+Storage        
+- Disk Storage Management
+    > Manage files, pages, indexes, logs, metadata on disk
+    > Tracks free space, used space and reclaim space from deleted 
+    > Manage meta data
+- Buffer Management
+    > Manage buffer on RAM
+    > Fetch requested page not in memory
+    > Evict page when buffer is full
+    > Track and checkpoint dirty pages (pages with updates)
+- Index Management
+    > Update Indexes on writes
+    > Creating of Indexes
+    > Manage method of creation
+
+
+
+
+RAM vs Disk
