@@ -1,0 +1,10 @@
+deadlocks
+
+Caching
+
+Replication topologies:
+master slave
+multi master
+peer to peer
+
+eviction algos like LRU
