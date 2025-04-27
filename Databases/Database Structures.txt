@@ -1,0 +1,13 @@
+B trees 
+
+more keys but since the entire page has to be retirieved anyway
+
+order of m, max number of keys are m - 1
+
+min keysfor all nodes other than root node is m/2
+
+height is log m n
+
+b trees grow towards the root
+
+diff btw b+ trees
